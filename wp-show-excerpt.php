@@ -10,6 +10,8 @@ License:     GPL2 etc
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 */
 
+if ( ! defined(‘WPINC’) ) exit;
+
 function wpse_protected_excerpt( $excerpt ) {
     if ( post_password_required() ) {
         $post = get_post();
